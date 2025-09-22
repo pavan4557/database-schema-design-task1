@@ -11,13 +11,17 @@ This includes understanding **DDL commands, ER diagrams, normalization, keys, an
 - MySQL Workbench
 
 # Interview Question 
+
 - What is normalization?
+  
 Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing data into related tables.
 
-## Explain primary vs foreign key.
+- Explain primary vs foreign key.
+  
 A primary key uniquely identifies each record in a table. A foreign key is a column that creates a link between two tables by referencing a primary key in another table.
 
-## What are constraints?
+- What are constraints?
+  
 Constraints are rules enforced on data columns to maintain accuracy and integrity, e.g., NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY.
 
 What is a surrogate key?
