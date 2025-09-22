@@ -1,5 +1,5 @@
-# database-schema-design-task1
-# SQL Developer Internship - Task 1: Database Setup & Schema Design
+# database-schema-design
+# SQL Developer Internship : Database Setup & Schema Design
 
 ## 📌 Objective
 The objective of this task is to learn **how to create databases, tables, and define relationships** using SQL.  
