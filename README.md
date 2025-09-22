@@ -9,29 +9,37 @@ This includes understanding **DDL commands, ER diagrams, normalization, keys, an
 
 ## 🛠 Tools Used
 - MySQL Workbench
-- # Library Database Schema Design
 
-## Objective
-To design and implement a relational database schema for a library management system with tables, constraints, and relationships.
+Interview Question Answers
+What is normalization?
+Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing data into related tables.
 
-## Tools Used
-MySQL Workbench (can be run on other SQL tools like pgAdmin or SQLiteStudio).
+Explain primary vs foreign key.
+A primary key uniquely identifies each record in a table. A foreign key is a column that creates a link between two tables by referencing a primary key in another table.
 
-## Database Schema
-Includes tables for Categories, Authors, Books, Members, and Loans, with primary and foreign keys to enforce relationships.
+What are constraints?
+Constraints are rules enforced on data columns to maintain accuracy and integrity, e.g., NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY.
 
-## Instructions
-Run the provided SQL script library_schema.sql to create and populate the database schema.
+What is a surrogate key?
+A surrogate key is an artificially created unique key, usually an auto-incremented integer, used instead of natural keys.
 
-## ER Diagram
-(If created: include ER diagram image or link here)
+How do you avoid data redundancy?
+By normalizing the database and splitting data into multiple related tables, avoiding duplicate data storage.
 
-## Interview Questions
-Answers to key questions related to normalization, keys, constraints, ER diagrams, and DBMS concepts.
+What is an ER diagram?
+Entity-Relationship diagram visually represents tables/entities and their relationships in the database.
 
-## Notes
-This schema supports basic library functionalities such as managing books, authors, member loans, and categories.
+Types of relationships in DBMS?
+One-to-One, One-to-Many, Many-to-Many.
 
+Explain the purpose of AUTO_INCREMENT.
+AUTO_INCREMENT automatically generates unique sequential values for primary keys on inserts.
+
+Default storage engine in MySQL?
+InnoDB.
+
+What is a composite key?
+A key made up of two or more columns that uniquely identify a record.
 ## 📂 Deliverables
 1. **SQL Script (`schema.sql`)**
    - Contains CREATE DATABASE and CREATE TABLE commands
