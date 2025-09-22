@@ -24,25 +24,32 @@ A primary key uniquely identifies each record in a table. A foreign key is a col
   
 Constraints are rules enforced on data columns to maintain accuracy and integrity, e.g., NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY.
 
-What is a surrogate key?
+- What is a surrogate key?
+  
 A surrogate key is an artificially created unique key, usually an auto-incremented integer, used instead of natural keys.
 
-How do you avoid data redundancy?
+- How do you avoid data redundancy?
+  
 By normalizing the database and splitting data into multiple related tables, avoiding duplicate data storage.
 
-What is an ER diagram?
+- What is an ER diagram?
+
 Entity-Relationship diagram visually represents tables/entities and their relationships in the database.
 
-Types of relationships in DBMS?
+- Types of relationships in DBMS?
+  
 One-to-One, One-to-Many, Many-to-Many.
 
-Explain the purpose of AUTO_INCREMENT.
+- Explain the purpose of AUTO_INCREMENT.
+  
 AUTO_INCREMENT automatically generates unique sequential values for primary keys on inserts.
 
-Default storage engine in MySQL?
+- Default storage engine in MySQL?
+  
 InnoDB.
 
-What is a composite key?
+- What is a composite key?
+  
 A key made up of two or more columns that uniquely identify a record.
 ## 📂 Deliverables
 1. **SQL Script (`schema.sql`)**
