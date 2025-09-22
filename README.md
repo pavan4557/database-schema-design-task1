@@ -8,11 +8,29 @@ This includes understanding **DDL commands, ER diagrams, normalization, keys, an
 ---
 
 ## 🛠 Tools Used
-- MySQL Workbench  
-- PostgreSQL (pgAdmin)  
-- SQLiteStudio  
+- MySQL Workbench
+- # Library Database Schema Design
 
----
+## Objective
+To design and implement a relational database schema for a library management system with tables, constraints, and relationships.
+
+## Tools Used
+MySQL Workbench (can be run on other SQL tools like pgAdmin or SQLiteStudio).
+
+## Database Schema
+Includes tables for Categories, Authors, Books, Members, and Loans, with primary and foreign keys to enforce relationships.
+
+## Instructions
+Run the provided SQL script library_schema.sql to create and populate the database schema.
+
+## ER Diagram
+(If created: include ER diagram image or link here)
+
+## Interview Questions
+Answers to key questions related to normalization, keys, constraints, ER diagrams, and DBMS concepts.
+
+## Notes
+This schema supports basic library functionalities such as managing books, authors, member loans, and categories.
 
 ## 📂 Deliverables
 1. **SQL Script (`schema.sql`)**
@@ -40,40 +58,6 @@ This includes understanding **DDL commands, ER diagrams, normalization, keys, an
 
 ---
 
-## 🚀 Example Schema (E-Commerce Domain)
-
-```sql
-CREATE DATABASE ecommerce;
-
-USE ecommerce;
-
-CREATE TABLE Customers (
-    customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE,
-    phone VARCHAR(15),
-    address VARCHAR(255)
-);
-
-CREATE TABLE Products (
-    product_id INT AUTO_INCREMENT PRIMARY KEY,
-    product_name VARCHAR(100) NOT NULL,
-    price DECIMAL(10,2) NOT NULL,
-    stock INT DEFAULT 0
-);
-
-CREATE TABLE Orders (
-    order_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_id INT,
-    order_date DATE,
-    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
-);
-
-CREATE TABLE OrderDetails (
-    order_id INT,
-    product_id INT,
-    quantity INT NOT NULL,
-    PRIMARY KEY (order_id, product_id),
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
-);
+
