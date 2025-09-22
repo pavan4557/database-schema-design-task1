@@ -75,8 +75,5 @@ A key made up of two or more columns that uniquely identify a record.
 - **AUTO_INCREMENT** usage  
 - **ER Diagram** and types of relationships (`1:1`, `1:M`, `M:N`)  
 
----
-
-    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
-    FOREIGN KEY (product_id) REFERENCES Products(product_id)
-
+# DOCUMENT
+Data Source <a.hred ="https://github.com/pavan4557/database-schema-design-task1/blob/main/sql%20code.sql"
